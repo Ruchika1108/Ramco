@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Ramco Prints</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="your_name">Enter your Name</string>
+    <string name="company_name">Enter your Company Name</string>
+    <string name="company_address">Enter your Company Address</string>
+    <string name="city">Enter City</string>
+    <string name="pincode">Enter Pin Code</string>
+    <string name="email">Enter E-mail Address</string>
+    <string name="mailing_address">Enter Mailing Address</string>
+    <string name="mobile_number">Enter Mobile Number</string>
+    <string name="work_phone_number">Enter Work Phone Number</string>
+    <string name="next_button">NEXT</string>
+
+    <string name="product_details">Product Details</string>
+    <string name="size_of_cylinder">Enter size of Cylinder</string>
+    <string name="area_of_cylinder">Enter area of Cylinder</string>
+    <string name="type_of_printing">Enter type of Printing</string>
+    <string name="media_of_print">Enter media of print</string>
+    <string name="technical_specification">Technical Specification of Roller</string>
+    <string name="width">Enter Width</string>
+    <string name="circumference">Enter Circumference</string>
+    <string name="bore_diameter">Enter Bore Diameter</string>
+    <string name="key_way_size">Enter Key Way Size</string>
+    <string name="flange_size">Enter Flange Size(Thickness)</string>
+    <string name="color">Enter Color</string>
+    <string name="quantity_of_color">Enter number of quantity of color</string>
+    <string name="place_order_button">PLACE ORDER</string>
+
+    <string name="our_service">OUR SERVICES</string>
+    <string name="place_order">PLACE AN ORDER</string>
+
+    <string name="services2">Services Provided</string>
+    <string name="services">\n\t\t\t\tWe are pleased to inform you that we are providing following flexible packaging solutions,\n\n1) Roto Gravures(Pouch Printing) Printing Cylinders.\n   All type of Packaging i.e. Wate, Milk, Tak, Lassi, Pepsi, Dahi, Ghee, Paneer, etc.\n\n2) Printed PVC lables for Water, Ghee, Dahi, distelliries Bottle cap.\n\n3) Woven Fabric (PP Bag) for Water Pouch, Sugar, food items Packaging. \n\n4) Laminated Pouch for Ghee, Paneer, Sugar, Masala, Food Items Packaging, etc. \n\n5) Multicolor Bopp Laminated PP Bags.</string>
+    <string name="services1">\nWe Have an experience of more than 15 years in this field. We have unit at Aurangabad and Nagpur in Maharashtra.</string>
+    <string name="office_address"><b>ADDRESS:</b>\n Gut No. 30, Plot No. 14-15 (Near K-74) MIDC, Waluj, Aurangabad (MS)</string>
+    <string name="contact"><b>Phone No.:</b> 0240-6628544</string>
+    <string name="mobile"><b>Mob:</b> 9325213014</string>
+    <string name="email1"><b>Email:</b> ramcograph1@gmail.com</string>
+
+    <string name="order">Your Order has been Placed</string>
+    <string name="orderid">Order Id :</string>
+    <string name="description1">Your order will be delivered in 6-7 days</string>
+</resources>

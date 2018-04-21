@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.ramco.UpdatePage">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:ems="17"
+                android:hint="Enter Order id to search"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Search"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/currentcustname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btSearch"
+                android:ems="17"
+                android:inputType="textPersonName"
+                android:layout_marginTop="40dp"
+                android:hint="Customer Name"/>
+
+            <EditText
+                android:id="@+id/idorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentcustname"
+                android:ems="17"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:hint="Order ID"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idorder"
+                android:textColor="@android:color/black"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:text="Update the status of Order" />
+
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="40dp">
+                <RadioGroup
+                    android:id="@+id/radiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Partly Completed"
+                        android:onClick="radio1"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Completed"
+                        android:onClick="radio1"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpdateData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ll3"
+                android:layout_marginTop="30dp"
+                android:text="Update" />
+
+
+
+            <!--
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:ems="17"
+                android:hint="Enter Order id to search"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:onClick="search"
+                android:text="Search"
+                android:textColor="@android:color/white"
+                android:background="@android:color/black"
+                android:textStyle="bold"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"/>
+            <EditText
+                android:id="@+id/currentcustname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btSearch"
+                android:ems="17"
+                android:inputType="textPersonName"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:id="@+id/currentorderstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentcustname"
+                android:ems="17"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentorderstatus"
+                android:textColor="@android:color/black"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:text="Updated the status of Order" />
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="40dp">
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Partly Completed" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed" />
+            </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpdateData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ll3"
+                android:layout_marginTop="30dp"
+                android:onClick="updateData"
+                android:text="Update" />
+
+
+
+            -->
+        </RelativeLayout>
+    </ScrollView>
+
+</android.widget.RelativeLayout>

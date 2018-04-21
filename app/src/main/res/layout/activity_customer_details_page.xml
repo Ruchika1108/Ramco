@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.ramco.CustomerDetailsPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/customer_details"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/customerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_id"
+                android:layout_centerHorizontal="true"
+                android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_marginTop="30dp"
+                android:ems="17"
+                android:hint="@string/your_name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:textColor="@android:color/black"
+                android:hint="@string/company_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/companyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/companyName"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:textColor="@android:color/black"
+                android:hint="@string/company_address"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/companyAddress"
+                android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:hint="@string/city"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:hint="@string/pincode"
+                android:inputType="number"
+                android:textColor="@android:color/black" />
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/pincode"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/mailingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:hint="@string/mailing_address"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mailingAddress"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mobile"
+                android:layout_marginTop="10dp"
+                android:ems="17"
+                android:hint="@string/work_phone_number"
+                android:inputType="phone"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/phone"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/black"
+                android:text="@string/next_button"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</android.widget.RelativeLayout>
